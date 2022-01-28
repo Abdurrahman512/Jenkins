@@ -1,1 +1,1 @@
-echo "this is my class project on Maven Integration webhooks"
+echo "this is my class project  Maven Integration webhooks"
