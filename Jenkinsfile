@@ -4,7 +4,7 @@ pipeline{
         stage('Git Clone'){
             agent any
             steps{
-                git branch: 'main', url: 'https://github.com/Abdurrahman512/Jenkins.git'
+                git branch: 'main', credentialsId: 'my_jenkins_repo_creden', url: 'https://github.com/Abdurrahman512/Jenkins.git'
             }
         }
         stage('Maven Compile'){
