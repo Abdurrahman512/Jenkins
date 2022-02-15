@@ -13,7 +13,7 @@ pipeline{
         }
         stage('Create Docker image'){
             steps{
-                sh 'docker biuld -t webimage:$BUILD_NUMBER .'
+                sh 'docker build -t webimage:$BUILD_NUMBER .'
             }
         }
     }
