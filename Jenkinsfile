@@ -13,6 +13,7 @@ pipeline{
         }
         stage('Create Docker image'){
             steps{
+                sh 'rm -rf dockerimg'
                 sh 'mkdir dockerimg'
                 sh 'cd dockerimg'
                 sh 'cp /var/lib/jenkins/workspace/class__Jenkinsfile_Dockerfile/target/maigolab_hello-1.0.0.jar  .'    
