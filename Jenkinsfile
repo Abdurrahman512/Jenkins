@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Git Clone'){
             steps{
-                git branch: 'main', credentialsId: 'my_jenkins_repo_creden', url: 'https://github.com/Abdurrahman512/Jenkins.git'
+                git branch: 'Jenkin_docker', url: 'https://github.com/Abdurrahman512/Jenkins.git'
             }
         }
         stage('Maven Build'){
