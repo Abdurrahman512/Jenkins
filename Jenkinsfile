@@ -31,7 +31,7 @@ pipeline{
                 sh label: '', script: '''rm -rf dockerimg
 mkdir dockerimg
 cd dockerimg
-cp /var/lib/jenkins/workspace/class_pipeline/target/maigolab_hello-1.0.0.jar  .
+cp /var/lib/jenkins/workspace/class__Jenkinsfile_Dockerfile/target/maigolab_hello-1.0.0.jar  .
 touch Dockerfile
 cat <<EOT>>Dockerfile
 FROM tomcat:8.0-alpine
